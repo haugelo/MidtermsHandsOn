@@ -1,0 +1,24 @@
+<body>
+    <div class="container">
+        <h1>Employee List 2</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID:</th>
+                    <th>First Name:</th>
+                    <th>Last Name:</th>
+                    <th>Email:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let empData of empFetch;">
+                    <td>{{empData.id}}</td>
+                    <td>{{empData.firstname}}</td>
+                    <td>{{empData.lastname}}</td>
+                    <td>{{empData.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    </body>
